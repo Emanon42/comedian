@@ -3,7 +3,7 @@ import pygame.camera
 from pygame.locals import *
 
 DEVICE = '/dev/video0'
-SIZE = (640, 480)
+SIZE = (480, 480)
 FILENAME = 'capture.png'
 
 def camStream():
@@ -15,7 +15,8 @@ def camStream():
     screen = pygame.surface.Surface(SIZE, 0, display)
     capture = True
     while capture:
-        screen = camera.get_image(screen)
+        screen = camera.get_image()
+        #screen = pygame.transform.scale(screen, (480,480))
         display.blit(screen, (0,0))
         pygame.display.flip()
         for event in pygame.event.get():
