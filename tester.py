@@ -17,7 +17,8 @@ def show_webcam():
         for index,(x,y,w,h) in enumerate(faces):
 
             if cv2.waitKey(1) == 32:
-                face = img[x:x+w,y:y+h]
+                face = img[y:y+h,x:x+w]
+                face = cv2.resize(face,(64,64))
                 faceName = "face"+str(index)+".png"
                 cv2.imwrite(faceName,face)
             cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
