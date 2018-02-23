@@ -1,6 +1,6 @@
 import cv2
 from lib import detect
-
+from lib.tasks import detectTask
 
 def show_webcam():
     cam = cv2.VideoCapture(0)
@@ -14,10 +14,18 @@ def show_webcam():
         #img = img[width:width+400,height:height+400]
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
-        faces_ = detect.SmileDetector("lib/weights/detection_weights.pth","lib/weights/classification_weights.pth")
-        detecteds = faces_.detect_faces(img)
-        print(len(detecteds))
+
+        #faces_ = detect.SmileDetector("lib/weights/detection_weights.pth","lib/weights/classification_weights.pth")
+        #detecteds = faces_.detect_faces(img)
+        #print(len(detecteds))
         #print(len(faces))
+
+        async_detec = detectTask.delay(img)
+        if async_detec.ready():
+            (boxes, preds) = async_detec.get()
+            print(boxes)
+            print(preds)
+            
         for index,(x,y,w,h) in enumerate(faces):
 
             if cv2.waitKey(1) == 32:
