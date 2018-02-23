@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7233d2a2-4bce-4fca-8c8d-77cb8668b494" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/comedian.iml" afterPath="$PROJECT_DIR$/.idea/comedian.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/lib/detect.py" afterPath="$PROJECT_DIR$/lib/detect.py" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/.idea/.name" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/.idea/smile-detect-lib.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/Untitled.ipynb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/detect.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/layers/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/layers/box_utils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/layers/functions/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/layers/functions/detection.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/layers/functions/prior_box.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/layers/modules/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/layers/modules/l2norm.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/layers/modules/multibox_loss.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/resnet.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/ssd.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/smile-detect-lib/weights/detection_weights.pth" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/lib/detect.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="17" column="116" lean-forward="false" selection-start-line="17" selection-start-column="116" selection-end-line="17" selection-end-column="116" />
+              <caret line="17" column="85" lean-forward="false" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -369,7 +348,7 @@
     <entry file="file://$PROJECT_DIR$/lib/detect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="116" lean-forward="false" selection-start-line="17" selection-start-column="116" selection-end-line="17" selection-end-column="116" />
+          <caret line="17" column="85" lean-forward="false" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

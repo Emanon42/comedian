@@ -11,11 +11,11 @@ class SmileDetector:
 
     def __init__(self,ssd_weights_path, resnet_weights_path):
         self.ssd = build_ssd("test",300,2)
-        self.ssd.load_state_dict(torch.load(ssd_weights_path, map_location=lambda storage, location: 'cpu'))
+        self.ssd.load_state_dict(torch.load(ssd_weights_path, map_location='cpu'))
 
         self.conv_net_builder = ConvnetBuilder(resnet34, 2, False, False, ps=0.6)
         self.classifier = self.conv_net_builder.model
-        self.classifier.load_state_dict(torch.load(resnet_weights_path, map_location=lambda storage, location: 'cpu'))
+        self.classifier.load_state_dict(torch.load(resnet_weights_path, map_location='cpu'))
         self.classifier.eval()
 
         self.transform = torchvision.transforms.Normalize(mean=[0.485, 0.456, 0.406],std=[0.229, 0.224, 0.225])
