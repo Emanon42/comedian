@@ -9,6 +9,7 @@ def show_webcam():
     width = int(((cam.get(cv2.CAP_PROP_FRAME_WIDTH))/2)-200)
     height = int(((cam.get(cv2.CAP_PROP_FRAME_HEIGHT))/2)-200)
     face_cascade = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
+    i = 0
     while True:
 
         ret_val, img = cam.read()
@@ -21,12 +22,14 @@ def show_webcam():
         #detecteds = faces_.detect_faces(img)
         #print(len(detecteds))
         #print(len(faces))
+        if i == 0:
+            async_detec = detectTask.delay(img)
 
-        async_detec = detectTask.delay(img)
         if async_detec.ready():
             (boxes, preds) = async_detec.get()
             print(boxes)
             print(preds)
+            async_detec = detectTask.delay(img)
             
         for index,(x,y,w,h) in enumerate(faces):
 
@@ -53,6 +56,7 @@ def show_webcam():
         #     cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
         cv2.imshow('my webcam', img)
+        i += 1
         if cv2.waitKey(1) == 27:
             break
 
