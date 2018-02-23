@@ -1,11 +1,8 @@
 import cv2
 from lib import detect
-<<<<<<< HEAD
 from lib.tasks import detectTask
-=======
 import time
 
->>>>>>> 05081f76e180299f4b4fe801c8d159fc7cdfd7b6
 
 def show_webcam():
     cam = cv2.VideoCapture(0)
@@ -18,7 +15,6 @@ def show_webcam():
 
         #img = img[width:width+400,height:height+400]
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-<<<<<<< HEAD
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
         #faces_ = detect.SmileDetector("lib/weights/detection_weights.pth","lib/weights/classification_weights.pth")
@@ -40,7 +36,6 @@ def show_webcam():
                 faceName = "face"+str(index)+".png"
                 cv2.imwrite(faceName,face)
             cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
-=======
         #faces = face_cascade.detectMultiScale(gray, 1.3, 5)
         faces_ = detect.SmileDetector("lib/weights/detection_weights.pth","lib/weights/classification_weights.pth")
         t0 = time.time()
@@ -56,7 +51,6 @@ def show_webcam():
         #         faceName = "face"+str(index)+".png"
         #         cv2.imwrite(faceName,face)
         #     cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
->>>>>>> 05081f76e180299f4b4fe801c8d159fc7cdfd7b6
 
         cv2.imshow('my webcam', img)
         if cv2.waitKey(1) == 27:
