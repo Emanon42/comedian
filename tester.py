@@ -1,4 +1,5 @@
 import cv2
+from lib import detect
 
 
 def show_webcam():
@@ -13,7 +14,10 @@ def show_webcam():
         #img = img[width:width+400,height:height+400]
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
-        print(len(faces))
+        faces_ = detect.SmileDetector("lib/weights/detection_weights.pth","lib/weights/classification_weights.pth")
+        detecteds = faces_.detect_faces(img)
+        print(len(detecteds))
+        #print(len(faces))
         for index,(x,y,w,h) in enumerate(faces):
 
             if cv2.waitKey(1) == 32:
