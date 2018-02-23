@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		863302F9203C650D00AD3F51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863302F8203C650D00AD3F51 /* AppDelegate.swift */; };
+		863302FB203C650D00AD3F51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863302FA203C650D00AD3F51 /* ViewController.swift */; };
+		863302FE203C650D00AD3F51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863302FC203C650D00AD3F51 /* Main.storyboard */; };
+		86330300203C650D00AD3F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863302FF203C650D00AD3F51 /* Assets.xcassets */; };
+		86330303203C650D00AD3F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86330301203C650D00AD3F51 /* LaunchScreen.storyboard */; };
+		8633030E203C650D00AD3F51 /* CoreML_smilerecogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8633030D203C650D00AD3F51 /* CoreML_smilerecogTests.swift */; };
+		86330319203C650D00AD3F51 /* CoreML_smilerecogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86330318203C650D00AD3F51 /* CoreML_smilerecogUITests.swift */; };
+		86330353203F4C8500AD3F51 /* ImprovedSmilerMK2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 86330352203F4C8500AD3F51 /* ImprovedSmilerMK2.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8633030A203C650D00AD3F51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 863302ED203C650D00AD3F51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 863302F4203C650D00AD3F51;
+			remoteInfo = CoreML_smilerecog;
+		};
+		86330315203C650D00AD3F51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 863302ED203C650D00AD3F51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 863302F4203C650D00AD3F51;
+			remoteInfo = CoreML_smilerecog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		863302F5203C650D00AD3F51 /* CoreML_smilerecog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreML_smilerecog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		863302F8203C650D00AD3F51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		863302FA203C650D00AD3F51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		863302FD203C650D00AD3F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		863302FF203C650D00AD3F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86330302203C650D00AD3F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86330304203C650D00AD3F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86330309203C650D00AD3F51 /* CoreML_smilerecogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreML_smilerecogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8633030D203C650D00AD3F51 /* CoreML_smilerecogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_smilerecogTests.swift; sourceTree = "<group>"; };
+		8633030F203C650D00AD3F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86330314203C650D00AD3F51 /* CoreML_smilerecogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreML_smilerecogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86330318203C650D00AD3F51 /* CoreML_smilerecogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_smilerecogUITests.swift; sourceTree = "<group>"; };
+		8633031A203C650D00AD3F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86330352203F4C8500AD3F51 /* ImprovedSmilerMK2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImprovedSmilerMK2.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		863302F2203C650D00AD3F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86330306203C650D00AD3F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86330311203C650D00AD3F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		863302EC203C650D00AD3F51 = {
+			isa = PBXGroup;
+			children = (
+				863302F7203C650D00AD3F51 /* CoreML_smilerecog */,
+				8633030C203C650D00AD3F51 /* CoreML_smilerecogTests */,
+				86330317203C650D00AD3F51 /* CoreML_smilerecogUITests */,
+				863302F6203C650D00AD3F51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		863302F6203C650D00AD3F51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				863302F5203C650D00AD3F51 /* CoreML_smilerecog.app */,
+				86330309203C650D00AD3F51 /* CoreML_smilerecogTests.xctest */,
+				86330314203C650D00AD3F51 /* CoreML_smilerecogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		863302F7203C650D00AD3F51 /* CoreML_smilerecog */ = {
+			isa = PBXGroup;
+			children = (
+				863302F8203C650D00AD3F51 /* AppDelegate.swift */,
+				863302FA203C650D00AD3F51 /* ViewController.swift */,
+				863302FC203C650D00AD3F51 /* Main.storyboard */,
+				86330352203F4C8500AD3F51 /* ImprovedSmilerMK2.mlmodel */,
+				863302FF203C650D00AD3F51 /* Assets.xcassets */,
+				86330301203C650D00AD3F51 /* LaunchScreen.storyboard */,
+				86330304203C650D00AD3F51 /* Info.plist */,
+			);
+			path = CoreML_smilerecog;
+			sourceTree = "<group>";
+		};
+		8633030C203C650D00AD3F51 /* CoreML_smilerecogTests */ = {
+			isa = PBXGroup;
+			children = (
+				8633030D203C650D00AD3F51 /* CoreML_smilerecogTests.swift */,
+				8633030F203C650D00AD3F51 /* Info.plist */,
+			);
+			path = CoreML_smilerecogTests;
+			sourceTree = "<group>";
+		};
+		86330317203C650D00AD3F51 /* CoreML_smilerecogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86330318203C650D00AD3F51 /* CoreML_smilerecogUITests.swift */,
+				8633031A203C650D00AD3F51 /* Info.plist */,
+			);
+			path = CoreML_smilerecogUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		863302F4203C650D00AD3F51 /* CoreML_smilerecog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8633031D203C650D00AD3F51 /* Build configuration list for PBXNativeTarget "CoreML_smilerecog" */;
+			buildPhases = (
+				863302F1203C650D00AD3F51 /* Sources */,
+				863302F2203C650D00AD3F51 /* Frameworks */,
+				863302F3203C650D00AD3F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreML_smilerecog;
+			productName = CoreML_smilerecog;
+			productReference = 863302F5203C650D00AD3F51 /* CoreML_smilerecog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86330308203C650D00AD3F51 /* CoreML_smilerecogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86330320203C650D00AD3F51 /* Build configuration list for PBXNativeTarget "CoreML_smilerecogTests" */;
+			buildPhases = (
+				86330305203C650D00AD3F51 /* Sources */,
+				86330306203C650D00AD3F51 /* Frameworks */,
+				86330307203C650D00AD3F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8633030B203C650D00AD3F51 /* PBXTargetDependency */,
+			);
+			name = CoreML_smilerecogTests;
+			productName = CoreML_smilerecogTests;
+			productReference = 86330309203C650D00AD3F51 /* CoreML_smilerecogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		86330313203C650D00AD3F51 /* CoreML_smilerecogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86330323203C650D00AD3F51 /* Build configuration list for PBXNativeTarget "CoreML_smilerecogUITests" */;
+			buildPhases = (
+				86330310203C650D00AD3F51 /* Sources */,
+				86330311203C650D00AD3F51 /* Frameworks */,
+				86330312203C650D00AD3F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86330316203C650D00AD3F51 /* PBXTargetDependency */,
+			);
+			name = CoreML_smilerecogUITests;
+			productName = CoreML_smilerecogUITests;
+			productReference = 86330314203C650D00AD3F51 /* CoreML_smilerecogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		863302ED203C650D00AD3F51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Alliterative Anchovies";
+				TargetAttributes = {
+					863302F4203C650D00AD3F51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					86330308203C650D00AD3F51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 863302F4203C650D00AD3F51;
+					};
+					86330313203C650D00AD3F51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 863302F4203C650D00AD3F51;
+					};
+				};
+			};
+			buildConfigurationList = 863302F0203C650D00AD3F51 /* Build configuration list for PBXProject "CoreML_smilerecog" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 863302EC203C650D00AD3F51;
+			productRefGroup = 863302F6203C650D00AD3F51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				863302F4203C650D00AD3F51 /* CoreML_smilerecog */,
+				86330308203C650D00AD3F51 /* CoreML_smilerecogTests */,
+				86330313203C650D00AD3F51 /* CoreML_smilerecogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		863302F3203C650D00AD3F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86330303203C650D00AD3F51 /* LaunchScreen.storyboard in Resources */,
+				86330300203C650D00AD3F51 /* Assets.xcassets in Resources */,
+				863302FE203C650D00AD3F51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86330307203C650D00AD3F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86330312203C650D00AD3F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		863302F1203C650D00AD3F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863302FB203C650D00AD3F51 /* ViewController.swift in Sources */,
+				86330353203F4C8500AD3F51 /* ImprovedSmilerMK2.mlmodel in Sources */,
+				863302F9203C650D00AD3F51 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86330305203C650D00AD3F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8633030E203C650D00AD3F51 /* CoreML_smilerecogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86330310203C650D00AD3F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86330319203C650D00AD3F51 /* CoreML_smilerecogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8633030B203C650D00AD3F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 863302F4203C650D00AD3F51 /* CoreML_smilerecog */;
+			targetProxy = 8633030A203C650D00AD3F51 /* PBXContainerItemProxy */;
+		};
+		86330316203C650D00AD3F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 863302F4203C650D00AD3F51 /* CoreML_smilerecog */;
+			targetProxy = 86330315203C650D00AD3F51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		863302FC203C650D00AD3F51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				863302FD203C650D00AD3F51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86330301203C650D00AD3F51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86330302203C650D00AD3F51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8633031B203C650D00AD3F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8633031C203C650D00AD3F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8633031E203C650D00AD3F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YTG4C7YJ4Z;
+				INFOPLIST_FILE = CoreML_smilerecog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alliterative-anchovies.CoreML-smilerecog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8633031F203C650D00AD3F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YTG4C7YJ4Z;
+				INFOPLIST_FILE = CoreML_smilerecog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alliterative-anchovies.CoreML-smilerecog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86330321203C650D00AD3F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreML_smilerecogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alliterative-anchovies.CoreML-smilerecogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML_smilerecog.app/CoreML_smilerecog";
+			};
+			name = Debug;
+		};
+		86330322203C650D00AD3F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreML_smilerecogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alliterative-anchovies.CoreML-smilerecogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML_smilerecog.app/CoreML_smilerecog";
+			};
+			name = Release;
+		};
+		86330324203C650D00AD3F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreML_smilerecogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alliterative-anchovies.CoreML-smilerecogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoreML_smilerecog;
+			};
+			name = Debug;
+		};
+		86330325203C650D00AD3F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreML_smilerecogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alliterative-anchovies.CoreML-smilerecogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoreML_smilerecog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		863302F0203C650D00AD3F51 /* Build configuration list for PBXProject "CoreML_smilerecog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8633031B203C650D00AD3F51 /* Debug */,
+				8633031C203C650D00AD3F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8633031D203C650D00AD3F51 /* Build configuration list for PBXNativeTarget "CoreML_smilerecog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8633031E203C650D00AD3F51 /* Debug */,
+				8633031F203C650D00AD3F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86330320203C650D00AD3F51 /* Build configuration list for PBXNativeTarget "CoreML_smilerecogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86330321203C650D00AD3F51 /* Debug */,
+				86330322203C650D00AD3F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86330323203C650D00AD3F51 /* Build configuration list for PBXNativeTarget "CoreML_smilerecogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86330324203C650D00AD3F51 /* Debug */,
+				86330325203C650D00AD3F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 863302ED203C650D00AD3F51 /* Project object */;
+}
