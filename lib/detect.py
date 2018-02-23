@@ -76,7 +76,7 @@ class SmileDetector:
         crops_tensors = [self.transform(torch.from_numpy(np.transpose(crop, [2,0,1])).float()/255) for crop in crops]
         batch = Variable(torch.stack(crops_tensors, dim=0), volatile=True)
         predictions = self.classifier(batch)
-        return np.exp(predictions.data.numpy())
+        return np.exp(predictions.data.numpy()).tolist()
 
 
 
@@ -84,6 +84,7 @@ class SmileDetector:
         boxes = self.detect_faces(image)
         crops = self.get_crops(image, boxes)
         preds = self.predict_smiles(crops)
+        print()
         return (boxes, preds)
 
 
