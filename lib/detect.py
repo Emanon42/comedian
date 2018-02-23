@@ -82,6 +82,8 @@ class SmileDetector:
 
     def call(self,image):
         boxes = self.detect_faces(image)
+        if len(boxes) == 0:
+            return ()
         crops = self.get_crops(image, boxes)
         preds = self.predict_smiles(crops)
         print()
